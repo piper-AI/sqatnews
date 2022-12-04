@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    var sites = [
+        'http://www.google.com',
+        'http://www.stackoverflow.com',
+        'http://www.example.com',
+        'http://www.youtube.com'
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(pink, lightblue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+}
+
+.active {
+}
+.strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+</style>
+</head>
+<body>
+<div class="strokeme">
+<ul>
+  <li><h1><a>SQ@news</a></h1></li>
+  <li style="float:right"><h1><a href="#" onclick="randomSite();" style="color:orange;">Lucky Find</a></li>
+  <li style="float:right"><h1><a href="#about">Zodiac Signs</a></li>
+  <li style="float:right"><h1><a href="#about">Shopping</a></li>
+  <li style="float:right"><h1><a href="#news">What's hot</a></li>
+</ul>
+</div>
+
+<div style="padding:20px;margin-top:70px;height:1500px;">
+  <h1>Fixed Top Navigation Bar</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+</div>
+
+</body>
+</html>
