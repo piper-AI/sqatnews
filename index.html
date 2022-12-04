@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+    var sites = [
+        'https://www.google.co.uk',
+        'https://www.gnoosic.com',
+        'https://10minutemail.com',
+        'http://www.youtube.com',
+        'https://riverstyx.com',
+        'https://camelcamelcamel.com',
+        'https://www.geoguessr.com',
+        'http://www.thisismywebsitenow.com',
+        'https://www.theonion.com',
+        'https://www.naturalreaders.com',
+        'https://www.howstuffworks.com',
+        'https://www.worldhistory.org',
+        'http://radio.garden',
+        'https://www.window-swap.com',
+        'https://www.futureme.org',
+        'https://www.deepl.com/en/translator',
+        'https://thenounproject.com',
+        'https://www.all8.com/tools/bpm.htm',
+        'https://futureboy.us/fsp/dollar.fsp',
+        'https://www.amazon.com',
+        'https://www.foodnetwork.com',
+        'https://www.zoom.com',
+        'https://www.cnet.com/',
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
 <style>
 body {margin:0;}
 
@@ -42,7 +74,7 @@ li a:hover:not(.active) {
 <div class="strokeme">
 <ul>
   <li><h1><a>SQ@news</a></h1></li>
-  <li style="float:right"><h1><a href="#about" style="color:orange;">Lucky Find</a></li>
+  <li style="float:right"><h1><a href="#" onclick="randomSite();" style="color:orange;">Lucky Find</a></li>
   <li style="float:right"><h1><a href="#about">Zodiac Signs</a></li>
   <li style="float:right"><h1><a href="#about">Shopping</a></li>
   <li style="float:right"><h1><a href="#news">What's hot</a></li>
