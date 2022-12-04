@@ -1,3 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    var sites = [
+        'https://www.google.co.uk',
+        'https://www.gnoosic.com',
+        'https://10minutemail.com',
+        'http://www.youtube.com',
+        'https://riverstyx.com',
+        'https://camelcamelcamel.com',
+        'https://www.geoguessr.com',
+        'http://www.thisismywebsitenow.com',
+        'https://www.theonion.com',
+        'https://www.naturalreaders.com',
+        'https://www.howstuffworks.com',
+        'https://www.worldhistory.org',
+        'http://radio.garden',
+        'https://www.window-swap.com',
+        'https://www.futureme.org',
+        'https://www.deepl.com/en/translator',
+        'https://thenounproject.com',
+        'https://www.all8.com/tools/bpm.htm',
+        'https://futureboy.us/fsp/dollar.fsp',
+        'https://www.amazon.com',
+        'https://www.foodnetwork.com',
+        'https://www.zoom.com',
+        'https://www.cnet.com/',
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(pink, lightblue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+}
+
+.active {
+}
+.strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+</style>
+</head>
+<body>
+<div class="strokeme">
+<ul>
+  <li><h1><a href="index.html">SQ@news</a></h1></li>
+  <li style="float:right"><h1><a href="#" onclick="randomSite();" style="color:orange;">Lucky Find</a></li>
+  <li style="float:right"><h1><a href="search.html">seARch</a></li>
+  <li style="float:right"><h1><a href="hot.html">What's hot</a></li>
+</ul>
+</div>
+    
 <form method="GET" action="results.html">
 <table border="0" cellspacing="0" cellpadding="5" width="70%">
 <tbody><tr><td bgcolor="#FFFFFF">
